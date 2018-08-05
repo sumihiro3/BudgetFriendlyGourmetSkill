@@ -1,0 +1,13 @@
+service: BudgetFriendlyGourmetSkill
+
+provider:
+  name: aws
+  runtime: python3.6
+  stage: dev
+  region: ap-northeast-1
+
+functions:
+  budget-friendly-gourmet:
+    handler: handler.handler
+    events: 
+      - alexaSkill: amzn1.ask.skill.xxxxxxxx
